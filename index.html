@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Curious Hobbies</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styloindex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body onload="mostrarModal()">
+
+    <div id="modal-bienvenida" class="modal">
+        <div class="modal-content">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <h2>Bienvenidos a mi página</h2>
+            <p>Gracias por visitarme. ¡Espero que disfrutes de mi contenido!</p>
+        </div>
+    </div>
+
+    <header>
+        <div id="logo">
+            <img src="logo_mar.png" alt="Logo">
+        </div>
+        <div id="menu-container">
+            <div id="menu">
+                <button id="menu-button"><i class="fas fa-bars"></i> Menu</button>
+                <ul class="lista">
+                    <li><button class="btn-menu"><i class="fas fa-home" style="color:#6a77ee;"></i> <a href="#portada">Inicio</a></button></li>
+                    <li><button class="btn-menu"><i class="fas fa-envelope" style="color: #2ecc71;"></i> <a href="#portada">Contacto</a></button></li>
+                    <li><button class="btn-menu"><i class="fas fa-book" style="color: #8f3bf0;"></i> <a href="#fot_varias">Mis Favoritos</a></button></li>
+                    <li><button class="btn-menu"><i class="fas fa-camera" style="color: #f39c12;"></i> <a href="#servicios">Fotos</a></button></li>
+                </ul>
+            </div>
+            <button id="login-button"><i class="fas fa-sign-in-alt"></i> <a href="login.html" style="color: white; text-decoration: none;">Login</a></button>
+        </div>
+    </header>
+
+    <section id="portada">
+        <div>
+            <div id="txt_arriba">
+                <h2><i class="fas fa-pencil-alt"></i>Acerca de Mi...</h2>
+                <p> Hola, soy Marcela.
+                    Aquí despliego mi mundo de pasiones y gustos. Desde
+                    mis peliculas favoritas, hasta mis fotos preferidas, los invito a explorar conmigo lo que me
+                    hace feliz. ¡Bienvenidos a mi universo!</p>
+            </div>
+            <div id="contacto">
+                <h2><i class="fas fa-phone"></i>Contacto</h2>
+                <ul>
+                    <li><button class="btn-contacto"><i class="fab fa-facebook-f" style="color: #3b5998;"></i> <a href="https://www.facebook.com/marce.heredia.583" target="_blank">Facebook</a></button></li>
+                    <li><button class="btn-contacto"><i class="fab fa-instagram" style="color: #e4405f;"></i> <a href="https://www.instagram.com/_marrrrrrrrrrrrrrr/" target="_blank">Instagram</a></button></li>
+                    <li><button class="btn-contacto"><i class="far fa-envelope" style="color: #d93025;"></i> <a href="mailto:marce.heredia.333@gmail.com">Gmail</a></button></li>
+                </ul>
+            </div>
+        </div>
+        <div id="foto">
+            <img src="pic_gatito.jpeg" alt="Imagen de gatito">
+        </div>
+    </section>
+
+    <section id="fot_varias">
+        <div class="contenedor">
+            <h1><i class="fas fa-star"></i> Mis Favoritos</h1>
+            <div class="fotx">
+                <div class="fot">
+                    <img src="peli.jpeg" alt="Pelicula">
+                    <button class="btn-fot"><a href="https://www.youtube.com/watch?v=V1DQ1oJvuRg&ab_channel=ClasedeAnaCris" target="_blank">Ver Trailer</a></button>
+                </div>
+                <div class="fot">
+                    <img src="cancion.jpeg" alt="Cancion">
+                    <button class="btn-fot"><a href="https://youtu.be/Wun6zDSpwkg?si=H7-8_qiixYfBKOQu" target="_blank">Ver Video</a></button>
+                </div>
+                <div class="fot">
+                    <img src="vivo.jpeg" alt="Vivo">
+                    <button class="btn-fot"><a href="https://www.youtube.com/live/K3CXK3HVGqg?si=sLvZH6wWd_fH9FQs" target="_blank">Ver Streaming</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h1><i class="fas fa-camera"></i> Mis Fotos</h1>
+        <div class="boxA">
+            <div class="caja">
+                <img src="1a.jpg" alt="Foto 1">
+            </div>
+            <div class="caja">
+                <img src="2a.jpg" alt="Foto 2">
+            </div>
+            <div class="caja">
+                <img src="3a.jpg" alt="Foto 3">
+            </div>
+        </div>
+        <div class="boxB">
+            <div class="caja">
+                <img src="4a.jpg" alt="Foto 4">
+            </div>
+            <div class="caja">
+                <img src="5a.jpg" alt="Foto 5">
+            </div>
+            <div class="caja">
+                <img src="6a.jpg" alt="Foto 6">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="footer-content">
+            <p>&copy; 2024 Marcela Heredia. Todos los derechos reservados.</p>
+        </div>
+    </section>
+
+    <script>
+        function mostrarModal() {
+            document.getElementById('modal-bienvenida').style.display = 'block';
+        }
+
+        function cerrarModal() {
+            document.getElementById('modal-bienvenida').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
